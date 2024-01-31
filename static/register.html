@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign Up | University" />
+    <title>Sign Up | University</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+  </head>
+  
+  <div class="container">
+  <header class="header">
+    <h1 id="title">Registration Form</h1>
+  </header>
+  
+  <form id="signup-form" method="POST" action="/api/signup">
+    
+    <!-- NAME -->
+    <div class="form-set">
+      <label id="name-label" for="name">First Name</label>
+      <input type="text" name="name" id="name" class="form-detail" placeholder="Enter your first name" required />
+    </div>
+    <div class="form-set">
+        <label id="name-label" for="name">Last Name</label>
+        <input type="text" name="name" id="name" class="form-detail" placeholder="Enter your last name" required />
+      </div>
+    
+    <!-- EMAIL -->
+    <div class="form-set">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-detail" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-set">
+        <label id="password" for="password">Password</label>
+        <input type="password" name="password" id="passq" class="form-detail" placeholder="Minimum 8 characters" required />
+    </div>
+
+    <!-- FACULTY -->
+    <div class="form-set">
+        <p>Faculty</p>
+        <select id="dropdown" name="faculty" class="form-detail" required>
+          <option disabled selected value>Select faculty</option>
+          <option value="F01">Economics</option>
+          <option value="F02">Law</option>
+          <option value="F03">Computer Science</option>
+          <option value="F04">Medical</option>
+          <option value="F05">Art and Design</option>
+        </select>
+      </div>
+    
+    <!-- SUBMIT -->
+    <div class="form-set">
+      <button type="submit" id="submit" class="submit-button" value="submit">Submit</button>
+    </div>
+  </form>
+    
+  </div>
+  
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>
+            <form method="POST" action="/form">
+                <label>Email</label><input name="email" type="text" value=""/><br />
+                <label>Password</label><input name="password" type="text" value=""/><br />
+                <label>First Name</label><input name="firstname" type="text" value=""/><br />
+                <label>Last Name</label><input name="lastname" type="text" value="" /><br />
+                <input type="submit" value="submit"/>
+            </form>
+        </div>
+    </body>
+</html> -->
